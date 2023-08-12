@@ -1,0 +1,102 @@
+
+
+
+
+//    his.rest.get()
+//            .uri("https://other-service.example.com/endpoint")
+//        .headers(headers -> headers.setBearerAuth(overridingToken))
+//            .retrieve()
+//        .bodyToMono(String.class)
+//        .block()
+
+//        String username = payload.get("username");
+//        String password = payload.get("password");
+//        String password2 = payload.get("passwordw");
+//
+//        System.out.println(username);
+//        System.out.println(password);
+//        System.out.println(password2);
+//
+//        return creatorUserService.findUserName("admin");
+//        return creatorUserService.create(userDto);
+//        try{
+//            return ResponseEntity.status(HttpStatus.OK).body(creatorUserService.create(user));
+//        }catch (Exception e){
+//            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
+//        }
+
+
+    @GetMapping("/register")
+//    @PreAuthorize("hasAuthority('ADMIN')")
+    public ResponseEntity<?> register2()
+    {
+        return ResponseEntity.status(HttpStatus.OK).body("{\"error\":\"Ocurrio un error\"}");
+    }
+
+//    @GetMapping("/register/{param}")
+//    @PreAuthorize("@conditionEvaluator.canPreAuth(#param, authentication)")
+//    public ResponseEntity<?> register3(@PathVariable("param") String param)
+//    {
+//        return ResponseEntity.status(HttpStatus.OK).body("{\"error\":\"Ocurrio un error\"}");
+//    }
+//
+//    @GetMapping("/registerjuan")
+//    @PostAuthorize("returnObject == 'registerjuan'")
+//    public ResponseEntity<?> registe4()
+//    {
+//        System.out.println("**registerjuan***");
+//        return ResponseEntity.status(HttpStatus.OK).body("{\"error\":\"Ocurrio un error\"}");
+//    }
+//
+//
+//    @GetMapping("/preFilter")
+//    @PreFilter("filterObject.startsWith(authentication.principal.username)")
+//    public String preFilter(@RequestBody List<String> values)
+//    {
+//        System.out.println("values" + values);
+//        return "preFilter";
+//    }
+//
+//    @GetMapping("/postFilter")
+//    @PostFilter("filterObject.startsWith(authentication.principal.username)")
+//    public List<String> postFilter()
+//    {
+//        List<String> values = new ArrayList<>();
+//        values.add("user - object");
+//        values.add("admin - object");
+//        values.add("user - object");
+//        values.add("admin2 - object");
+//        System.out.println("values" + values);
+//        return values;
+//    }
+//
+//
+//    @GetMapping("")
+//    public ResponseEntity<?> index(){
+//        return ResponseEntity.status(HttpStatus.OK).body("");
+//    }
+//
+//    @GetMapping("/paged")
+//    public ResponseEntity<?> index(Pageable pageable){
+//        return ResponseEntity.status(HttpStatus.OK).body("");
+//    }
+//
+//    @GetMapping("/{id}")
+//    public ResponseEntity<?> show(@PathVariable Long id){
+//        return ResponseEntity.status(HttpStatus.OK).body("{\"DATA\":123456}");
+//    }
+//
+//    @PostMapping("")
+//    public ResponseEntity<?> save(/*@RequestBody Rol entity*/){
+//        return ResponseEntity.status(HttpStatus.OK).body("");
+//    }
+//
+//    @PutMapping("/{id}")
+//    public ResponseEntity<?> update(/*@PathVariable Long id, @RequestBody Rol entit*/){
+//        return ResponseEntity.status(HttpStatus.OK).body("{\"DATA\":123456}");
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<?> delete(@PathVariable Long id){
+//            return ResponseEntity.status(HttpStatus.OK).body("");
+//    }
